@@ -45,15 +45,22 @@ class ReplyFragment : Fragment() {
     fun sendReply(userToken:String){
         val message = binding.etmessage.text.toString()
         val threadId = arg.threadId
-        viewModel.Sendreply(message,threadId,userToken,object : ReplyCallback{
-            override fun onreplySuccess(response: String) {
-                Toast.makeText(activity, "Your Message Sent Successfully", Toast.LENGTH_SHORT).show()
-            }
+        if (message.isEmpty()){
+            Toast.makeText(activity, "Please Enter Message", Toast.LENGTH_SHORT).show()
+            return
+        }
+        else{
+            viewModel.Sendreply(message,threadId,userToken,object : ReplyCallback{
+                override fun onreplySuccess(response: String) {
+                    Toast.makeText(activity, "Your Message Sent Successfully", Toast.LENGTH_SHORT).show()
+                }
 
-            override fun onreplyError(errorMessage: String) {
-                Toast.makeText(activity, "Something Went Wrong", Toast.LENGTH_SHORT).show()
-            }
-        })
+                override fun onreplyError(errorMessage: String) {
+                    Toast.makeText(activity, "Something Went Wrong", Toast.LENGTH_SHORT).show()
+                }
+            })
+        }
+
     }
     private fun checkUserToken() {
         GlobalScope.launch(Dispatchers.Main) {
