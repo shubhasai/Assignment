@@ -1,4 +1,5 @@
 ## APK LINK: https://github.com/shubhasai/BranchIncAssignment/raw/master/branch-app-debug.apk
+#### For Authentication Email: mshubhasai2002@gmail.com, Password: moc.liamg@iasahbuhsm
 # Screens
 It has a total 3 activities and 2 Fragments.
 
