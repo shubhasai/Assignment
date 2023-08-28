@@ -1,3 +1,4 @@
+## APK LINK: https://github.com/shubhasai/BranchIncAssignment/raw/master/branch-app-debug.apk
 # Screens
 It has a total 3 activities and 2 Fragments.
 
