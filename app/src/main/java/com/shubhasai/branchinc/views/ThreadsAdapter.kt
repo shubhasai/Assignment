@@ -33,11 +33,11 @@ class ThreadsAdapter(private val context: Context?, val threads: ArrayList<messa
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val thread = threads[position]
-        holder.id.text = "ID: "+thread.id.toString()
+        holder.id.text = "Message Id: "+thread.id.toString()
         holder.threadId.text = "Thread ID: "+thread.thread_id.toString()
         holder.time.text = "Created At: "+TimeFormater.convertToSocialFormat(thread.timestamp)
-        holder.body.text = "Msg: "+thread.body
-        holder.senderName.text = "Sender Id: "+thread.user_id
+        holder.body.text = "Message: "+thread.body
+        holder.senderName.text = "Client Id: "+thread.user_id
     }
 
     override fun getItemCount(): Int {

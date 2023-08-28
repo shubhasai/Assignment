@@ -19,7 +19,7 @@
             android:textSize="20sp"
             android:layout_height="wrap_content"/>
         <TextView
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:id="@+id/tvThreadBody"
             android:autoLink="all"
@@ -66,5 +66,17 @@
             android:text="Reply"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvReplies"
+        android:textStyle="bold"
+        android:text="All Conversation in this Thread"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvThreads"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

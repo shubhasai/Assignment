@@ -2,6 +2,7 @@ package com.shubhasai.branchinc.views
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -68,6 +69,7 @@ class ThreadsFragment : Fragment(),ThreadsAdapter.ThreadClicked {
             activity?.let {
                 UserData(it).getAccessToken.collect { userToken ->
                     if (userToken.isNotEmpty()) {
+                        Log.d("token",userToken)
                         fetchThreads(userToken)
                     }
                     else {
