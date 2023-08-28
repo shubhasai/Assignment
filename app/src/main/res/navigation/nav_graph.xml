@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/threadsFragment">
+
+    <fragment
+        android:id="@+id/threadsFragment"
+        android:name="com.shubhasai.branchinc.views.ThreadsFragment"
+        android:label="fragment_threads"
+        tools:layout="@layout/fragment_threads" >
+        <action
+            android:id="@+id/action_threadsFragment_to_replyFragment"
+            app:destination="@id/replyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="com.shubhasai.branchinc.views.ReplyFragment"
+        android:label="fragment_reply"
+        tools:layout="@layout/fragment_reply" >
+        <argument
+            android:name="threadId"
+            app:argType="string" />
+    </fragment>
+</navigation>
