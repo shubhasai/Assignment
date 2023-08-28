@@ -10,11 +10,13 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.shubhasai.branchinc.R
 import com.shubhasai.branchinc.data.messagesItem
+import com.shubhasai.branchinc.utils.TimeFormater
 
 class ThreadsAdapter(private val context: Context?, val threads: ArrayList<messagesItem>, val listener:ThreadClicked) :
     RecyclerView.Adapter<ThreadsAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val id: TextView = itemView.findViewById(R.id.tvThreadId)
+        val threadId: TextView = itemView.findViewById(R.id.tvThreadId)
+        val id: TextView = itemView.findViewById(R.id.tvId)
         val time: TextView = itemView.findViewById(R.id.tvThreadDate)
         val body: TextView = itemView.findViewById(R.id.tvThreadBody)
         val senderName: TextView = itemView.findViewById(R.id.tvThreadSender)
@@ -32,7 +34,8 @@ class ThreadsAdapter(private val context: Context?, val threads: ArrayList<messa
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val thread = threads[position]
         holder.id.text = "ID: "+thread.id.toString()
-        holder.time.text = thread.timestamp
+        holder.threadId.text = "Thread ID: "+thread.thread_id.toString()
+        holder.time.text = "Created At: "+TimeFormater.convertToSocialFormat(thread.timestamp)
         holder.body.text = "Msg: "+thread.body
         holder.senderName.text = "Sender Id: "+thread.user_id
     }

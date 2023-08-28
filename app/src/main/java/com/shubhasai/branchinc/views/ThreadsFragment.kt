@@ -60,7 +60,7 @@ class ThreadsFragment : Fragment(),ThreadsAdapter.ThreadClicked {
         })
     }
     override fun onThreadClicked(thread: messagesItem) {
-        val action = ThreadsFragmentDirections.actionThreadsFragmentToReplyFragment(thread.thread_id)
+        val action = ThreadsFragmentDirections.actionThreadsFragmentToReplyFragment(thread.thread_id,thread.body,thread.user_id)
         findNavController().navigate(action)
     }
     private fun checkUserToken() {
@@ -76,7 +76,6 @@ class ThreadsFragment : Fragment(),ThreadsAdapter.ThreadClicked {
                         val intent = Intent(activity, LoginActivity::class.java)
                         startActivity(intent)
                     }
-
                 }
             }
         }
