@@ -3,6 +3,7 @@
     <style name="Base.Theme.BranchInc" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/primary_blue</item>
+        <item name="android:windowBackground">@color/background_white</item>
     </style>
 
     <style name="Theme.BranchInc" parent="Base.Theme.BranchInc" />

@@ -21,6 +21,6 @@
         tools:layout="@layout/fragment_reply" >
         <argument
             android:name="threadId"
-            app:argType="string" />
+            app:argType="integer" />
     </fragment>
 </navigation>

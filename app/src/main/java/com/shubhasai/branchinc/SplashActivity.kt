@@ -28,13 +28,15 @@ class SplashActivity : AppCompatActivity() {
                     Toast.makeText(this@SplashActivity, "Regaining Session", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@SplashActivity, MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 } else {
                     // User token doesn't exist, navigate to the login activity
                     Toast.makeText(this@SplashActivity, "Login Again", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@SplashActivity, LoginActivity::class.java)
                     startActivity(intent)
+                    finish()
                 }
-                finish()
+
             }
         }
     }
