@@ -42,7 +42,8 @@ E. Navigation Component: It is used to navigate between the fragments.
 ![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/9b81594b-5bbf-4a26-a76c-f7d90bf4ac22)
 ![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/d045cbb6-e05d-4d55-8caa-cec689163301)
 ![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/7469c38e-4b81-4705-9edb-78d7ce49e61d)
-![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/075dae81-a2ed-4276-ba51-caf747118b2f)
+![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/bf2fb60a-71e1-45a6-b816-a00c90e1153b)
+
 
 
 
