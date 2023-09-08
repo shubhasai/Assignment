@@ -1,6 +1,4 @@
-## APK LINK: https://github.com/shubhasai/BranchIncAssignment/raw/master/branch-app-debug.apk
-#### For Authentication Email: mshubhasai2002@gmail.com, Password: moc.liamg@iasahbuhsm
-# Screens
+
 It has a total 3 activities and 2 Fragments.
 
 ## Activities: 
@@ -38,14 +36,6 @@ C. Coroutines: It is used to perform the asynchronous tasks.
 D. DataStore: It is used to store the data in the local storage.
 
 E. Navigation Component: It is used to navigate between the fragments.
-
-# Screenshots
-![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/9b81594b-5bbf-4a26-a76c-f7d90bf4ac22)
-![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/d045cbb6-e05d-4d55-8caa-cec689163301)
-![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/7469c38e-4b81-4705-9edb-78d7ce49e61d)
-![image](https://github.com/shubhasai/BranchIncAssignment/assets/78340623/bf2fb60a-71e1-45a6-b816-a00c90e1153b)
-
-
 
 
 
